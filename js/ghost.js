@@ -2,7 +2,7 @@ class Ghost {
 	constructor(ctx, canvasSize) {
 		this.ctx = ctx;
 		this.canvasSize = canvasSize;
-		this.ghostPos = { x: 920, y: -85 };
+		this.ghostPos = { x: 1820, y: -885 };
 		this.ghostSize = { h: 60, w: 60 };
 		this.ghostVel = { x: 1, y: 1 };
 
@@ -25,16 +25,11 @@ class Ghost {
 			this.ghostSize.h
 		);
 
-		/* this.ctx.fillStyle = "#808080"; */
-		/* this.ctx.fillRect(this.ghostPos.x, this.ghostPos.y, this.ghostSize.w, this.ghostSize.h); */
 		this.animateGhost(framesCounter);
 		this.moveGhost(playerPos);
 	}
 
 	moveGhost(playerPos) {
-		/* 		if (playerPos.x === this.ghostPos.x - this.ghostVel.x) {
-			this.image.src = "./images/ghost-left.png";
-		} */
 		if (
 			playerPos.x < this.ghostPos.x &&
 			playerPos.x + 70 < this.ghostPos.x + this.ghostSize.w &&

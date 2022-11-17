@@ -29,7 +29,7 @@ body {
 	gap: 50px;
 	transition: 0.5s ease-out;
 	position: absolute;
-	bottom: 110px;
+	bottom: 140px;
 	animation: slide-in 4s ease-in-out;
 }
 
@@ -66,32 +66,13 @@ h1 {
 	right: 30px;
 }
 
-@keyframes game {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 @keyframes slide-in {
 	0% {
 		bottom: -100%;
 	}
 
 	100% {
-		bottom: 110px;
-	}
-}
-
-@keyframes slide-in-game {
-	0% {
-		padding-top: 100%;
-	}
-
-	100% {
-		padding-top: 0;
+		bottom: 140px;
 	}
 }
 
@@ -144,22 +125,23 @@ canvas {
 	z-index: 2;
 }
 
-.marta,
-.manu {
-	width: 25%;
-	max-height: 900px;
-	height: 80%;
-	position: absolute;
-	bottom: 80px;
-	animation: game 4s ease-in-out, slide-in-us 3s ease-in-out;
+@keyframes game {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
-.marta {
-	left: 0;
-}
+@keyframes slide-in-game {
+	0% {
+		padding-top: 100%;
+	}
 
-.manu {
-	right: -10px;
+	100% {
+		padding-top: 0;
+	}
 }
 
 @keyframes slide-in-us {
@@ -174,7 +156,7 @@ canvas {
 
 @keyframes slide-out {
 	0% {
-		bottom: 110px;
+		bottom: 140px;
 	}
 
 	100% {
